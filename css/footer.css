@@ -1,0 +1,203 @@
+#section-contact{
+    margin-top:30px;
+    background:#0e1538 ;
+    color:#fff;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+   }
+#side-left{
+    width: 45%; 
+   }
+ #side-left h2{
+    margin-bottom: 10px;
+ }  
+ #pfooter{
+    width: 400px;
+ }
+
+#side-right{
+    margin-top: 20px;
+ width: 45%;
+ display: flex;
+flex-wrap: wrap;
+justify-content: center;  
+align-items: center;
+
+}
+#imgcont{
+  width: 30px;
+}
+#contt{
+margin:5px;
+width: 100%;
+display: flex;
+justify-content: center;  
+align-items: center;
+font-size: 0.9em;
+}
+#contw{
+    margin:5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    font-size: 0.9em;
+}
+#cont-info{
+  margin:10px;
+  width: 100%;
+  display: flex;
+justify-content: center;  
+align-items: center;
+font-size: 0.9em;
+}
+#datecell{
+    width:10px;
+    overflow: hidden;
+    margin: 0 -20px;
+    cursor: pointer;
+    opacity:0;
+}
+#datecell:hover{
+    margin: 0 10px;
+    width:100px;
+    transition:1s;
+    opacity: 1;
+}
+#datocontac{
+    width:10px;
+    overflow: hidden;
+    margin: 0 -20px;
+    cursor: pointer;
+    opacity:0;
+}
+#datocontac:hover{
+    margin: 0 10px;
+    width:255px;
+    transition:1.5s;
+    opacity:1;
+}
+/*comiendo de la barra*/
+
+#linea{
+    width: 300px;
+    height:5px;
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom:15px;
+}
+#linea::before{
+content: '';
+position: absolute;
+background: linear-gradient(315deg,#00ccff,#d400d4);
+transition: 0.5s;
+inset: -10px 120px;
+ animation: animat 3s linear infinite;
+}
+@keyframes animat {
+    0%{
+        transform:translateX(-180px);
+    }
+    100%{
+        transform:translateX(200px);
+    }
+}
+
+/*fin de la barra*/
+
+@media(max-width:800px){
+    #section-contact{
+        width: 100%;
+        margin-top: 20px 0;   
+        background:#0e1538 ;
+        color:#fff;
+        flex-direction: column;
+    }
+    #side-left{
+       width: 100%; 
+    }
+    #pfooter{
+       margin:0 30%;
+     }
+    #side-left h2{
+       margin:0 45% ;
+    }
+    #pfooter{
+        margin: auto;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #side-right{
+    margin-top: 20px;
+     width: 100%;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;
+    
+    }
+    #imgcont{
+     width: 30px;
+    }
+    #contt{
+        margin:5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    font-size: 0.9em;
+    }
+    #contw{
+        margin:5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        font-size: 0.9em;
+    }
+    #cont-info{
+      margin:10px;
+      width: 100%;
+      display: flex;
+    justify-content: center;  
+    align-items: center;
+    font-size: 0.9em;
+    }
+    #datecell{
+        width:10px;
+        overflow: hidden;
+        margin: 0 -20px;
+        cursor: pointer;
+        opacity:0;
+    }
+    #datecell:hover{
+        margin: 0 10px;
+        width:100px;
+        transition:1s;
+        opacity: 1;
+    }
+    #datocontac{
+        font-size 0.9em
+        width:10px;
+        overflow: hidden;
+        margin: 0 -20px;
+        cursor: pointer;
+        opacity:0;
+    }
+    #datocontac:hover{
+        margin: 0 10px;
+        width:290px;
+        transition:1.5s;
+        opacity:1;
+    }
+    
+#linea{
+    margin:0 auto;
+    margin-bottom: 15px;
+}
+}
